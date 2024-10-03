@@ -1,0 +1,102 @@
+body {
+  font-family: "TT Lakes", sans-serif;
+  margin: 0;
+  background: #f8f8f8;
+}
+
+button {
+  padding: 0;
+  border: none;
+  background-color: transparent;
+}
+
+.aside {
+  display: flex;
+  flex-direction: column;
+  width: 320px;
+  height: 100%;
+  justify-content: space-between;
+  position: absolute;
+  padding: 18px 24px 16px 23px;
+  box-sizing: border-box;
+}
+
+.aside__menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 40px;
+}
+
+.aside__left {
+  display: flex;
+  gap: 16px;
+}
+
+.aside__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.aside__contacts {
+  display: flex;
+  flex-direction: column;
+}
+
+.aside__contacts ul {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  margin-left: 16px;
+}
+
+.aside__contacts a {
+  margin-left: 16px;
+  text-decoration: none;
+  color: black;
+}
+
+.aside__navigation {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  gap: 32px;
+}
+.aside__navigation li {
+  position: relative;
+}
+
+.aside__navigation li::before {
+  content: "";
+  border-left: 4px solid transparent;
+  height: 32px;
+  position: absolute;
+  top: -5px;
+  left: -23px;
+  border-bottom-right-radius: 50%;
+  border-top-right-radius: 50%;
+}
+
+.aside__navigation li:hover::before {
+  border-left: 4px solid #41f6d7;
+}
+
+.aside__contacts p:nth-child(3n) {
+  font-weight: bold;
+  font-size: 25px;
+}
+
+.aside__navigation li:hover {
+  opacity: 0.6;
+}
+
+.aside__language li:hover {
+  opacity: 0.6;
+}
